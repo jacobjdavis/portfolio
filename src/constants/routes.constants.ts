@@ -3,6 +3,7 @@ export const ROUTE_PATH_STUDY = '/study';
 export const ROUTE_PATH_CONTACT = '/contact';
 export const ROUTE_PATH_EXPERTISE = '/expertise';
 export const ROUTE_PATH_PROJECTS = '/projects';
+export const ROUTE_PATH_QUOTES = '/quotes';
 export const ROUTE_PATH_EXPERIENCE = '/experience';
 export const ROUTE_PATH_RESUME =
   'https://www.canva.com/design/DAFwZNtk1rI/n-X2iMXImthvLrSktG0tBQ/view';
@@ -15,6 +16,7 @@ export const ROUTE_LABEL_CONTACT = 'Contact';
 export const ROUTE_LABEL_EXPERTISE = 'Expertise';
 export const ROUTE_LABEL_PROJECTS = 'Projects';
 export const ROUTE_LABEL_EXPERIENCE = 'Experience';
+export const ROUTE_LABEL_QUOTES = 'Quotes App';
 export const ROUTE_LABEL_LINKEDIN = 'devicon-linkedin-plain colored';
 export const ROUTE_LABEL_GITHUB = 'devicon-github-original colored';
 
@@ -40,6 +42,10 @@ export const ROUTES_PUBLIC: {
     path: ROUTE_PATH_PROJECTS,
     label: ROUTE_LABEL_PROJECTS,
   },
+  {
+    path: ROUTE_PATH_QUOTES,
+    label: ROUTE_LABEL_QUOTES,
+  },
   //   {
   //     isAnchor: true,
   //     path: ROUTE_PATH_RESUME,
@@ -64,5 +70,6 @@ export const ROUTES_PATH_TO_LABEL_MAP: Record<string, string> = {
   [ROUTE_PATH_CONTACT]: ROUTE_LABEL_CONTACT,
   [ROUTE_PATH_EXPERTISE]: ROUTE_LABEL_EXPERTISE,
   [ROUTE_PATH_PROJECTS]: ROUTE_LABEL_PROJECTS,
+  [ROUTE_PATH_QUOTES]: ROUTE_LABEL_QUOTES,
   [ROUTE_PATH_EXPERIENCE]: ROUTE_LABEL_EXPERIENCE,
 };

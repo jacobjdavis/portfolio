@@ -20,6 +20,7 @@ export const EXPERTISE: IExpertise[] = [
     name: 'Back End',
     skills: [
       { name: 'Node.js', icon: 'devicon-nodejs-plain' },
+      { name: 'Express', icon: 'devicon-express-original' },
       { name: 'MySQL', icon: 'devicon-mysql-plain' },
       { name: 'Postgresql', icon: 'devicon-postgresql-plain' },
     ],

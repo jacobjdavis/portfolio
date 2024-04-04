@@ -5,8 +5,11 @@ import {
   ROUTE_PATH_EXPERIENCE,
   ROUTE_PATH_EXPERTISE,
   ROUTE_PATH_PROJECTS,
+  ROUTE_PATH_QUOTES,
 } from 'constants/routes.constants';
 import { ViewExpertise } from 'views/ViewExpertise';
+import { ViewAbout } from 'views/ViewAbout';
+import { ViewAnimeQuotes } from 'views/ViewAnimeQuotes';
 
 export const RouterApp = () => (
   <BrowserRouter>
@@ -15,10 +18,11 @@ export const RouterApp = () => (
         <Route path="/" element={<h2>hello</h2>} />
       </Route>
       <Route path="/" element={<LayoutDefault />}>
-        <Route path={ROUTE_PATH_ABOUT} element={<Temp title="about" />} />
+        <Route path={ROUTE_PATH_ABOUT} element={<ViewAbout />} />
         <Route path={ROUTE_PATH_EXPERTISE} element={<ViewExpertise />} />
         <Route path={ROUTE_PATH_EXPERIENCE} element={<Temp title="exp" />} />
         <Route path={ROUTE_PATH_PROJECTS} element={<Temp title="projects" />} />
+        <Route path={ROUTE_PATH_QUOTES} element={<ViewAnimeQuotes />} />
       </Route>
 
       <Route path="/*" element={<Navigate to="/" replace />} />

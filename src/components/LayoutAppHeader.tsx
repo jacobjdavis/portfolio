@@ -57,7 +57,7 @@ export const LayoutAppHeader = () => {
     <AppBar sx={theme => ({ bgcolor: theme.palette.common.white })}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         <StyledLink isLogo to="/">
-          Jacob J. Davis
+          Jacob J Davis
         </StyledLink>
         {isMobile && (
           <IconButton onClick={handleToggleMenu}>
