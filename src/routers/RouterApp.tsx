@@ -11,6 +11,7 @@ import { ViewExpertise } from 'views/ViewExpertise';
 import { ViewAbout } from 'views/ViewAbout';
 import { ViewAnimeQuotes } from 'views/ViewAnimeQuotes';
 import { ViewHome } from 'views/ViewHome';
+import { ViewExperience } from 'views/ViewExperience';
 
 export const RouterApp = () => (
   <BrowserRouter>
@@ -21,7 +22,7 @@ export const RouterApp = () => (
       <Route path="/" element={<LayoutDefault />}>
         <Route path={ROUTE_PATH_ABOUT} element={<ViewAbout />} />
         <Route path={ROUTE_PATH_EXPERTISE} element={<ViewExpertise />} />
-        <Route path={ROUTE_PATH_EXPERIENCE} element={<Temp title="exp" />} />
+        <Route path={ROUTE_PATH_EXPERIENCE} element={<ViewExperience />} />
         <Route path={ROUTE_PATH_PROJECTS} element={<Temp title="projects" />} />
         <Route path={ROUTE_PATH_QUOTES} element={<ViewAnimeQuotes />} />
       </Route>
