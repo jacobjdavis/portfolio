@@ -13,14 +13,14 @@ interface IProps {
 }
 
 const StyledStack = styled(Stack)<{ isMobile: boolean }>`
-  height: ${({ isMobile }) => (isMobile ? '280px' : '320px')};
+  height: ${({ isMobile }) => (isMobile ? '280px' : '200px')};
   flex-shrink: 0;
   margin-top: ${({ isMobile }) => (isMobile ? '56px' : '64px')};
   position: relative;
   background-size: cover;
   justify-content: center;
   background-position: center;
-  background-image: url('assets/images/banner.jpeg');
+  background-image: url('assets/images/banner2.jpeg');
   &:after {
     content: '';
     display: block;
@@ -29,7 +29,7 @@ const StyledStack = styled(Stack)<{ isMobile: boolean }>`
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.3);
   }
 `;
 

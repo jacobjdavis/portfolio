@@ -10,12 +10,13 @@ import {
 import { ViewExpertise } from 'views/ViewExpertise';
 import { ViewAbout } from 'views/ViewAbout';
 import { ViewAnimeQuotes } from 'views/ViewAnimeQuotes';
+import { ViewHome } from 'views/ViewHome';
 
 export const RouterApp = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<LayoutHome />}>
-        <Route path="/" element={<h2>hello</h2>} />
+        <Route path="/" element={<ViewHome />} />
       </Route>
       <Route path="/" element={<LayoutDefault />}>
         <Route path={ROUTE_PATH_ABOUT} element={<ViewAbout />} />

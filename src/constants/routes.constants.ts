@@ -5,8 +5,7 @@ export const ROUTE_PATH_EXPERTISE = '/expertise';
 export const ROUTE_PATH_PROJECTS = '/projects';
 export const ROUTE_PATH_QUOTES = '/quotes';
 export const ROUTE_PATH_EXPERIENCE = '/experience';
-export const ROUTE_PATH_RESUME =
-  'https://www.canva.com/design/DAFwZNtk1rI/n-X2iMXImthvLrSktG0tBQ/view';
+export const ROUTE_PATH_RESUME = 'https://jacob-davis.tiiny.site';
 export const ROUTE_PATH_LINKEDIN = 'https://www.linkedin.com/in/davisjjacob/';
 export const ROUTE_PATH_GITHUB = 'https://github.com/jacobjdavis';
 
@@ -46,11 +45,11 @@ export const ROUTES_PUBLIC: {
     path: ROUTE_PATH_QUOTES,
     label: ROUTE_LABEL_QUOTES,
   },
-  //   {
-  //     isAnchor: true,
-  //     path: ROUTE_PATH_RESUME,
-  //     label: ROUTE_LABEL_RESUME,
-  //   },
+  {
+    isAnchor: true,
+    path: ROUTE_PATH_RESUME,
+    label: ROUTE_LABEL_RESUME,
+  },
   {
     isAnchor: true,
     isIcon: true,
