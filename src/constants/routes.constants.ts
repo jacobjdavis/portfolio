@@ -1,4 +1,3 @@
-export const ROUTE_PATH_ABOUT = '/about';
 export const ROUTE_PATH_STUDY = '/study';
 export const ROUTE_PATH_CONTACT = '/contact';
 export const ROUTE_PATH_EXPERTISE = '/expertise';
@@ -9,7 +8,6 @@ export const ROUTE_PATH_RESUME = 'https://jacob-davis.tiiny.site';
 export const ROUTE_PATH_LINKEDIN = 'https://www.linkedin.com/in/davisjjacob/';
 export const ROUTE_PATH_GITHUB = 'https://github.com/jacobjdavis';
 
-export const ROUTE_LABEL_ABOUT = 'About';
 export const ROUTE_LABEL_RESUME = 'Resume';
 export const ROUTE_LABEL_CONTACT = 'Contact';
 export const ROUTE_LABEL_EXPERTISE = 'Expertise';
@@ -25,10 +23,6 @@ export const ROUTES_PUBLIC: {
   isIcon?: boolean;
   isAnchor?: boolean;
 }[] = [
-  {
-    path: ROUTE_PATH_ABOUT,
-    label: ROUTE_LABEL_ABOUT,
-  },
   {
     path: ROUTE_PATH_EXPERTISE,
     label: ROUTE_LABEL_EXPERTISE,
@@ -65,7 +59,6 @@ export const ROUTES_PUBLIC: {
 ];
 
 export const ROUTES_PATH_TO_LABEL_MAP: Record<string, string> = {
-  [ROUTE_PATH_ABOUT]: ROUTE_LABEL_ABOUT,
   [ROUTE_PATH_CONTACT]: ROUTE_LABEL_CONTACT,
   [ROUTE_PATH_EXPERTISE]: ROUTE_LABEL_EXPERTISE,
   [ROUTE_PATH_PROJECTS]: ROUTE_LABEL_PROJECTS,
