@@ -20,7 +20,7 @@ export const PROJECTS: IProject[] = [
       'Express',
       'fetch',
     ],
-    url: 'www.google.com',
+    url: 'https://99.20.90.68:9000/quotes',
     github: 'https://github.com/jacobjdavis/api',
   },
 ];
