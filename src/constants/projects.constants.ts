@@ -19,10 +19,7 @@ export const PROJECTS: IProject[] = [
       'Express',
       'fetch',
     ],
-    url:
-      import.meta.env.MODE === 'development'
-        ? 'http://localhost:3000/quotes'
-        : 'https://jacobjdavis.com/quotes',
+    url: 'https://jacobjdavis.com/quotes',
     github: 'https://github.com/jacobjdavis/api',
   },
 ];
