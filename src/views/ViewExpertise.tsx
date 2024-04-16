@@ -11,7 +11,7 @@ const StyledStack = styled(Stack)`
 `;
 
 export const ViewExpertise = () => (
-  <StyledStack direction="row">
+  <StyledStack direction="row" alignItems="center">
     <ExpertiseProfile />
     <ExpertiseSkills />
   </StyledStack>
