@@ -5,7 +5,6 @@ export const PROJECTS: IProject[] = [
     title: 'Portfolio',
     description: 'Personal Portfolio Website.',
     keywords: ['React', 'Typescript', 'RTK Query', 'Material UI', 'Vite'],
-    url: 'www.google.com',
     github: 'https://github.com/jacobjdavis/portfolio',
   },
   {
@@ -23,7 +22,7 @@ export const PROJECTS: IProject[] = [
     url:
       import.meta.env.MODE === 'development'
         ? 'http://localhost:3000/quotes'
-        : 'https://99.20.90.68:9000/quotes',
+        : 'https://jacobjdavis.com/quotes',
     github: 'https://github.com/jacobjdavis/api',
   },
 ];

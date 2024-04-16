@@ -36,11 +36,13 @@ export const ViewProjects = () => (
               ))}
             </Stack>
             <Stack direction="row">
-              <Tooltip arrow placement="top" title="Launch application.">
-                <IconButton onClick={() => handleClickUrl(url)}>
-                  <LaunchIcon />
-                </IconButton>
-              </Tooltip>
+              {url && (
+                <Tooltip arrow placement="top" title="Launch application.">
+                  <IconButton onClick={() => handleClickUrl(url)}>
+                    <LaunchIcon />
+                  </IconButton>
+                </Tooltip>
+              )}
               <Tooltip arrow placement="top" title="See the code.">
                 <IconButton onClick={() => handleClickUrl(github)}>
                   <GitHubIcon />

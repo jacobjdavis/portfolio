@@ -4,7 +4,7 @@ import { IAnimeQuote } from 'types/animeQuote.types';
 export const quoteApi = createApi({
   reducerPath: 'quoteApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: import.meta.env.VITE_API_ENDPOINT || 'http://99.20.90.68:9001',
+    baseUrl: 'https://api.jacobjdavis.com',
   }),
   endpoints: builder => ({
     getAnimeQuote: builder.query<IAnimeQuote, void>({
