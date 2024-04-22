@@ -103,7 +103,7 @@ export const ViewCanvas = () => {
   }, []);
   return (
     <Grid container justifyContent="center" alignItems="center">
-      <canvas ref={canvasRef} />
+      {/* <canvas ref={canvasRef} /> */}
     </Grid>
   );
 };

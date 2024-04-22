@@ -6,7 +6,10 @@ import { LayoutAppFooter } from 'components/LayoutAppFooter';
 import { LayoutAppHeader } from 'components/LayoutAppHeader';
 import { LayoutViewHeader } from 'components/LayoutViewHeader';
 
-import { ROUTES_PATH_TO_LABEL_MAP } from 'constants/routes.constants';
+import {
+  FULL_SCREEN_ROUTES,
+  ROUTES_PATH_TO_LABEL_MAP,
+} from 'constants/routes.constants';
 
 export const LayoutHome = () => (
   <>
@@ -23,12 +26,14 @@ export const LayoutDefault = () => {
 
   const viewTitle = ROUTES_PATH_TO_LABEL_MAP?.[pathname] ?? '404 - Not Found';
 
+  const width = FULL_SCREEN_ROUTES.includes(pathname) ? 'xl' : 'lg';
+
   return (
     <>
       <LayoutAppHeader />
       <Stack component="main" height="100%">
         <LayoutViewHeader title={viewTitle} />
-        <Container sx={{ py: 10, flexGrow: 1 }} maxWidth="lg">
+        <Container sx={{ py: 10, flexGrow: 1 }} maxWidth={width}>
           <Outlet />
         </Container>
         <LayoutAppFooter />

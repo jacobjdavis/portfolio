@@ -5,6 +5,7 @@ export const ROUTE_PATH_PROJECTS = '/projects';
 export const ROUTE_PATH_QUOTES = '/quotes';
 export const ROUTE_PATH_EXPERIENCE = '/experience';
 export const ROUTE_PATH_CANVAS = '/canvas';
+export const ROUTE_PATH_BOWLING = '/bowling';
 export const ROUTE_PATH_RESUME = 'https://jacob-davis.tiiny.site';
 export const ROUTE_PATH_LINKEDIN = 'https://www.linkedin.com/in/davisjjacob/';
 export const ROUTE_PATH_GITHUB = 'https://github.com/jacobjdavis';
@@ -16,6 +17,7 @@ export const ROUTE_LABEL_PROJECTS = 'Projects';
 export const ROUTE_LABEL_EXPERIENCE = 'Experience';
 export const ROUTE_LABEL_QUOTES = 'Quotes App';
 export const ROUTE_LABEL_CANVAS = 'Canvas';
+export const ROUTE_LABEL_BOWLING = 'Bowling';
 export const ROUTE_LABEL_LINKEDIN = 'devicon-linkedin-plain colored';
 export const ROUTE_LABEL_GITHUB = 'devicon-github-original colored';
 
@@ -63,4 +65,7 @@ export const ROUTES_PATH_TO_LABEL_MAP: Record<string, string> = {
   [ROUTE_PATH_QUOTES]: ROUTE_LABEL_QUOTES,
   [ROUTE_PATH_EXPERIENCE]: ROUTE_LABEL_EXPERIENCE,
   [ROUTE_PATH_CANVAS]: ROUTE_LABEL_CANVAS,
+  [ROUTE_PATH_BOWLING]: ROUTE_LABEL_BOWLING,
 };
+
+export const FULL_SCREEN_ROUTES = [ROUTE_PATH_BOWLING];
