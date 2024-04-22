@@ -22,4 +22,11 @@ export const PROJECTS: IProject[] = [
     url: 'https://jacobjdavis.com/quotes',
     github: 'https://github.com/jacobjdavis/api',
   },
+  {
+    title: 'Bowling Calculator',
+    description: 'Calculates Bowling score for in progress games (hard coded)',
+    keywords: ['React', 'Typescript', 'Material UI', 'Vite'],
+    url: 'https://jacobjdavis.com/bowling',
+    github: 'https://github.com/jacobjdavis/portfolio',
+  },
 ];
