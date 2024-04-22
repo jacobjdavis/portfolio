@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { LayoutDefault, LayoutHome } from 'layouts/LayoutDefault';
 import {
+  ROUTE_PATH_CANVAS,
   ROUTE_PATH_EXPERIENCE,
   ROUTE_PATH_EXPERTISE,
   ROUTE_PATH_PROJECTS,
@@ -11,6 +12,7 @@ import { ViewAnimeQuotes } from 'views/ViewAnimeQuotes';
 import { ViewHome } from 'views/ViewHome';
 import { ViewExperience } from 'views/ViewExperience';
 import { ViewProjects } from 'views/ViewProjects';
+import { ViewCanvas } from 'views/ViewCanvas';
 
 export const RouterApp = () => (
   <BrowserRouter>
@@ -23,6 +25,7 @@ export const RouterApp = () => (
         <Route path={ROUTE_PATH_EXPERIENCE} element={<ViewExperience />} />
         <Route path={ROUTE_PATH_PROJECTS} element={<ViewProjects />} />
         <Route path={ROUTE_PATH_QUOTES} element={<ViewAnimeQuotes />} />
+        <Route path={ROUTE_PATH_CANVAS} element={<ViewCanvas />} />
       </Route>
 
       <Route path="/*" element={<Navigate to="/" replace />} />
