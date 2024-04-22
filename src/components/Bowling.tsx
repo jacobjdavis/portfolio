@@ -13,7 +13,7 @@ import { IBowlingProps, IFrameProps } from 'types/bowling.types';
 import { generateFrames, generateScore } from 'utils/bowling.utils';
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  backgroundColor: theme.palette.secondary.main,
   ...theme.typography.body2,
   padding: theme.spacing(1),
   margin: theme.spacing(0.5),
@@ -31,7 +31,7 @@ const Frame = ({ frame, score }: IFrameProps) => {
         <Stack direction="row">
           <Item>{frame.roll1 || ''}</Item>
           <Item>{frame.roll2 || ''}</Item>
-          <Item>{frame.roll3 || ''}</Item>
+          {frame.roll3 && <Item>{frame.roll3 || ''}</Item>}
         </Stack>
         <Item>{score}</Item>
       </Stack>
@@ -43,23 +43,10 @@ export const Bowling = ({ rolls }: IBowlingProps) => {
   const rollingScore = generateScore([...rolls]);
   const frames = generateFrames([...rolls]);
   return (
-    <TableContainer>
-      <Table size="small">
-        <TableHead>
-          <TableRow>
-            {[...Array(10).keys()].map(frame => (
-              <TableCell align="center">{frame + 1}</TableCell>
-            ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          <TableRow>
-            {[...Array(10).keys()].map(frame => (
-              <Frame frame={frames[frame]} score={rollingScore[frame]} />
-            ))}
-          </TableRow>
-        </TableBody>
-      </Table>
-    </TableContainer>
+    <TableRow>
+      {[...Array(10).keys()].map(frame => (
+        <Frame frame={frames[frame]} score={rollingScore[frame]} />
+      ))}
+    </TableRow>
   );
 };
