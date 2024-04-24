@@ -1,14 +1,5 @@
 import { styled } from '@mui/material/styles';
-import {
-  Paper,
-  Table,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody,
-  Stack,
-  TableContainer,
-} from '@mui/material';
+import { Paper, TableRow, TableCell, Stack } from '@mui/material';
 import { IBowlingProps, IFrameProps } from 'types/bowling.types';
 import { generateFrames, generateScore } from 'utils/bowling.utils';
 
